@@ -1,0 +1,55 @@
+extends layout
+
+block content
+  div(class='ui container')
+    h1
+        i(class='cubes icon')
+        |  #{title}
+    br
+    div(class="ui stackable equal width grid")
+    br
+    div(class='ui grid')
+        div(class='row')
+          div(class='sixteen wide column')
+              div(class="ui success message" style="display:none" id="success-message")
+                  i(class="close icon")
+                  div(class="header")
+                      i(class='send outline icon')
+                      | Message Sent
+                     p Message has been sent.
+
+        div(class='row')
+          div(class='sixteen wide column')
+            div(class="ui form")
+              div(class="field")
+                label Recipients - (#{contacts.length} Total Contacts)
+              div(id='recipient-container')
+                    div(class="ui search")
+                      button(class="ui left attached button" id="addAll") Add all
+                      button(class="right attached ui button" id="removeAll") Remove all
+                      div(class="ui icon input", style="padding-left: 20px")
+                        input(class="prompt" id="search" type="text", placeholder="Search Contacts...")
+                        i(class="search icon")
+                      div(class="results")
+            br
+
+            div(class='row' id="recipient-block")
+              div(class='sixteen wide column')
+                div(class="ui piled segment")
+                  h4(class="ui header") Selected Recipients
+                    div(id="recipients-area")
+
+            br
+
+            div(class='row')
+              div(class='sixteen wide column')
+                div(class="ui form")
+                    div(class="field")
+                        label Text
+                        textarea(id="message-box")
+                    button(class="ui submit positive button" id="send")
+                        i(class='send icon')
+                        | Send
+
+    div(class="ui inverted section divider")
+        div(class="ui vertical footer segment")

@@ -1,0 +1,3 @@
+#!/usr/bin/execlineb -P
+
+nodejs /opt/bulk-sms/bin/www

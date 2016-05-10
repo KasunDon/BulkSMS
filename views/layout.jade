@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/semantic/dist/semantic.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/reset.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/site.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/container.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/grid.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/input.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/button.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/button.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/icon.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/checkbox.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/label.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/list.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/message.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/transition.min.css')
+    link(rel='stylesheet', href='/semantic/dist/components/search.min.css')
+    style.
+        body > .ui.container {
+              margin-top: 3em;
+            }
+
+        .ui.container > h1 {
+              font-size: 3em;
+              text-align: center;
+              font-weight: normal;
+            }
+  body
+    block content
+    script(src='/jquery/dist/jquery.min.js')
+    script(src='/semantic/dist/semantic.min.js')
+    script(src='/semantic/dist/components/checkbox.min.js')
+    script(src='/semantic/dist/components/form.min.js')
+    script(src='/semantic/dist/components/site.min.js')
+    script(src='/semantic/dist/components/transition.min.js')
+    script(src='/semantic/dist/components/search.min.js')
+    script(src='/javascripts/mustache.js')
+    script(src='/javascripts/core.js')
